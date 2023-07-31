@@ -1,13 +1,12 @@
-const minMax1 = (arr)=>{ // array has n elements
+const minMax1 = (arr)=>{ // array has N elements
     const min = Number.MAX_VALUE;
     const max = Number.MIN_VALUE;
-    for(let i of arr){ // run n times
-        if(i < min) min = x; 
+    for(let i of arr){ // run N times
+        if(i < min) min = x;  
         if(i > max) max = x;
     }
 }
-// time complexity :  ?
-// space: ?
+// time complexity :  O(N)
 
 
 const minMax2 = (arr)=>{
@@ -20,8 +19,7 @@ const minMax2 = (arr)=>{
         if(i < max) max = x;
     }
 }
-// time complexity :  ?
-// space: ?
+// time complexity :  O(N)
 
 const runtime1 = (arrA, arrB)=>{ // a : arrA elements; b: arrB elements
     for(let a of arrA){ // run a times
@@ -31,17 +29,16 @@ const runtime1 = (arrA, arrB)=>{ // a : arrA elements; b: arrB elements
         console.log(b)
     }
 }
-// time complexity :  ?
-// space: ?
+// time complexity : O(A+B)
 
-const runtime2 = (arrA, arrB)=>{
-    for(let a of arrA){
+const runtime2 = (arrA, arrB)=>{ // arrA: [1, 2, 3] arrB: ["a", "b", "c"]
+    for(let a of arrA){ 
         for(let b of arrB){
-            console.log(a+ ", " +b)
+            console.log(a+ ", " +b) // 1a, 1b, 1c, 2a, 2b, 2c, 3a, 3b, 3c
         }
     }
 }
-// time complexity :  ?
+// time complexity :  O(AB)
 
 
 
@@ -57,7 +54,7 @@ const ex1 = (arr)=>{ // arr length : N
     }
     console.log(sum+ " , " + product)
 }
-// time complexity :  ?
+// time complexity :  O(N)
 
 
 
@@ -69,7 +66,7 @@ const ex2 = (arr) =>{
         }
     }
 }
-// time complexity :  ?
+// time complexity :   O(N^2)
 
 
 const ex3 = (arr) =>{
@@ -79,7 +76,7 @@ const ex3 = (arr) =>{
         }
     }
 }
-// time complexity : ?
+// time complexity : O(N^2)
 
 
 
@@ -102,7 +99,7 @@ const ex5 = (arr1, arr2)=>{
         }
     }    
 }
-// time complexity : ?
+// time complexity : O(AB)
 
 const ex6 = (arr) =>{
     for(let i=0; i<arr.length/2 ; i++){
@@ -112,7 +109,7 @@ const ex6 = (arr) =>{
         arr[j] = temp;
     }
 }
-// time complexity :  ?
+// time complexity :  O(N)
 
 // to find the power of 2:
 const ex7 = (n) =>{   //10, 5, 2, 1, 
@@ -128,7 +125,7 @@ const ex7 = (n) =>{   //10, 5, 2, 1,
         return curr
     }
 }
-// time complexity :  ?
+// time complexity :  O(logN)
 
 
 
