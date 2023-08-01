@@ -49,7 +49,7 @@ const priceArr3 = shoppingList.map((eachItem)=>{
 })
 
 console.log(priceArr3)
-
+const priceArr4 = shoppingList.map((eachItem)=> eachItem.price)
 
 // --- .filter() ---
 // Traditional for-loop to return an array of items with price<100
@@ -66,17 +66,23 @@ console.table(cheapItemArr);
 const cheapItemArr2 = shoppingList.filter((eachItem)=>{
     return eachItem.price<100;
 })
-console.table(cheapItemArr2);
+console.log(cheapItemArr2);
  
 // return a list of cheap items with only the names
 const cheapItemNameArr = shoppingList
-                            .filter((eachItem)=>eachItem.price<100)
-                            .map((eachItem)=>eachItem.item);
+                            .filter((eachItem)=>eachItem.price<100) // return the array of objects with price<100
+                            .map((eachItem, idx)=>eachItem.item); // create the customized array with only the names
 
-console.log(cheapItemNameArr);
-
-
-// ------------- CRUD with functional programming (DO NOT ALTER ORIGINAL ARRAY)------------
 
 
 // Sorting 
+console.log(cheapItemNameArr);
+const sortedName = [...cheapItemNameArr].sort();
+console.log(sortedName)
+
+console.log(priceArr)
+const sortedPrice = [...priceArr].sort((a, b)=> b-a)
+console.log(sortedPrice)
+
+const sortedShoppingList = [...shoppingList].sort((a , b)=> a.item > b.item? 1: -1)
+console.table(sortedShoppingList);
