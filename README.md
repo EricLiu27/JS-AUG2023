@@ -27,7 +27,18 @@
 - To start react server: cd into the react folder, ```npm start```
 - To start the express backend server: cd into the folder with package.json for backend, ```nodemon server.js``` (if the filename of the entry point is server.js)
 
+## Adding VS code setting
+If you want to have the html emmet, other than creating components using jsx, you can also add that in your setting. 
 
+![image](images/vscsetting.png)
+
+Or 
+in settings.json
+```
+  "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+  }
+```
 ## Common errors
 
 ### To kill a running port
