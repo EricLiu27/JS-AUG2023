@@ -14,6 +14,7 @@
 <SomeComponent someProp="test" someOtherProp={ 67 } /> 
 ```
 - All the variables would become key-value pair inside the props object
+- If the value for the props is number/array/object, make sure you curly out the values as they are javascript, not html. 
 
 
 ## State
