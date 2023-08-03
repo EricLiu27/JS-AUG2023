@@ -6,6 +6,9 @@ const FormPage2 = () => {
     const [flavor, setFlavor] = useState("Vanilla");
     const [quantity, setQuantity] = useState(0);
 
+    // when the form is submitted, show different message
+    const [isSubmitted, setIsSubmitted] = useState(false)
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -22,6 +25,12 @@ const FormPage2 = () => {
     return (
         <fieldset>
             <legend> FormPage2.jsx</legend>
+            {
+                isSubmitted?
+                <h3>Thank you for submitting the form</h3>:
+                <h3>Please fill in the form</h3>
+            }
+
             <form onSubmit={handleSubmit}>
                 <div>
                     <label> Flavor: </label>
