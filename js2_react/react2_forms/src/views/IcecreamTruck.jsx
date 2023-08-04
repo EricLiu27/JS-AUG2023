@@ -3,9 +3,10 @@ import FormDisplayComponent from '../components/FormDisplayComponent';
 // form input: store as state variable
 
 const IcecreamTruck = () => {
+    // keep track of the created icecream
     const [icecreamList, setIcecreamList] = useState([])
 
-
+    // form input
     const [flavor, setFlavor] = useState("Vanilla");
     const [quantity, setQuantity] = useState(0);
 
@@ -17,11 +18,13 @@ const IcecreamTruck = () => {
         receiveNewIcecream(newIcecream)
     }
 
+    // push the new icecream to the list
     const receiveNewIcecream = (newIcecream)=>{
         setIcecreamList([...icecreamList, newIcecream])
          // setIcecreamList((prev)=>[...prev, newIcecream]) : when you want to set new state depending on the prev state
     }
 
+    // remove icecream from the list by idx
     const removeIcecreamByIdx = (deleteIdx)=>{
         const filterList = icecreamList.filter((eachIcecream, idx)=> idx !== deleteIdx);
         setIcecreamList(filterList);
