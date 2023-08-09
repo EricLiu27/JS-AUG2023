@@ -16,7 +16,15 @@
 
 
 ## Folder structure
-![image](fullstack_folder.png)
+- projectFolder
+  - server
+    - configs
+    - controllers
+    - models
+    - routes
+  - .env
+  - package.json
+  - server.js
 - There are 4 folders inside the server -- configs, controllers, models, routes
 - server.js is the entry point that import the configs to connect to database, and import routes (which imports controller, which imports model)
 - No need to worry about the client folder. We will create it when it comes to the fullstack
