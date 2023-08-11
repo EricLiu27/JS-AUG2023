@@ -5,6 +5,12 @@ import axios from "axios"
 // 2. Get data on Load : useEffect
 // 3. Variable change when loading API : useState 
 
+// DELETE
+// 1. Add the button that send the id to the function
+// 2. When it is clicked, trigger handleDelete and would send delete request to API
+// 3. After it is deleted, update the state variable to remove that item from DOM
+
+
 const DashboardPage = () => {
     // create state variable for the list
 
