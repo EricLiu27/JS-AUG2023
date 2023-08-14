@@ -21,7 +21,7 @@
 3. DO NOT use any AI tools (like chatGPT, VS code extentions github CoPilot/TabNine)
 
 ## Asking for help
-1. Ask for help in discord channel (ping Heidi, Christian)
+1. Ask for help in discord channel (ping Heidi, Ronnie)
 
 ## Getting Graded
 1. Have your red belt features graded first
@@ -29,12 +29,14 @@
     ``` 
     @dojo_Heidi_Chen @dojo_ronnie_rios ready for grading in room 5
     ```
+3. Submit the file first, live grading based on your submitted file 
+4. DO NOT SUBMIT NODE_MODULES (client & server)
 
 ## RED BELT Requirements:
 1. FULL CRUD - Create, Update, Get all, Get one, Delete
 2. All routes should work
 3. Backend validations & display on frontend
-4. Different input types (text, number, dropdown,  checkbox, textarea, date)
+4. Different input types (text, number, dropdown,  checkbox, textarea)
 5. Datatype : String, Number, Boolean
 
 
