@@ -8,6 +8,7 @@
 ## Exam Day
 1. On exam day, you will be given the exam code 
 2. Start the exam by 10AM (Mountain time)
+3. 8 hours in total (within 5 hours : red / black)
 
 ## AVAILABLE RESOURCES
 1. my github
@@ -66,6 +67,6 @@
    - Being able to go through a large object and display important info (backend errors)
 
 4. Black Belt 
-   - We don't talk about black belt features
+   - It could be anything you learnt from the lectures or from the platform
    - Given several black belt features, able to complete 2 of them. 
    - Deploy within 24 hours of starting the exam
